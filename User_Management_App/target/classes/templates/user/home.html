@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .user-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .user-info {
+            margin-top: 20px;
+        }
+
+        .user-info h1 {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .complete-profile-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .complete-profile-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-container">
+        <h1>Welcome, [[${user.fullName}]]!</h1>
+        <a href="/logout">Logout</a>
+
+        <div class="user-info">
+            <h1>Name: [[${user.fullName}]]</h1>
+            <h1>Email: [[${user.email}]]</h1>
+            <h1>Qualification: [[${user.qualification}]]</h1>
+        </div>
+
+        <a href="/complete-profile" class="complete-profile-button">Continue to Complete Profile</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+com\becoder\config\CustomSuccessHandler.class
+com\becoder\model\UserDtls.class
+com\becoder\UserManagementAppApplication.class
+com\becoder\config\CustomUserDetails.class
+com\becoder\controller\TeacherController.class
+com\becoder\repository\UserRepository.class
+com\becoder\controller\AdminController.class
+com\becoder\config\UserDetailsServiceImpl.class
+com\becoder\service\UserService.class
+com\becoder\config\SecurityConfig.class
+com\becoder\service\UserServiceImpl.class
+com\becoder\controller\UserController.class
+com\becoder\controller\HomeController.class
